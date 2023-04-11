@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Glow
+  m_Name: Invincibility
   m_Shader: {fileID: -6465566751694194690, guid: 8b2642b84abaf0a42a634cec40037651,
     type: 3}
   m_Parent: {fileID: 0}
@@ -55,7 +55,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BottomLine: 1
+    - _BottomLine: 0.604
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 0
@@ -68,12 +68,13 @@ Material:
     - _Surface: 0
     - _TopLine: 1
     - _Transparancy: 0
+    - _Transparency: 1
     - _WorkflowMode: 1
     - _ZTest: 4
     - _ZWrite: 1
     - _ZWriteControl: 0
     m_Colors:
-    - _BaseColor: {r: 0.23168555, g: 1.5336026, b: 0, a: 0}
-    - _BottomColor: {r: 2, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 0, g: 0.1344228, b: 21.86836, a: 0}
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BottomColor: {r: 55.715233, g: 24.20833, b: 5.6065598, a: 1}
+    - _TopColor: {r: 1, g: 0.22812498, b: 0, a: 0}
   m_BuildTextureStacks: []
