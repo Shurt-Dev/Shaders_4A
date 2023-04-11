@@ -4,8 +4,26 @@ using UnityEngine;
 
 public class RotateCollectibles : MonoBehaviour
 {
-    void Update()
+
+    public float rotationAmount = 2f;
+    public int ticksPerSecond = 60;
+    public bool Pause = false;
+    private void Start()
     {
-        transform.Rotate(Vector3.up * Time.deltaTime);
+        StartCoroutine(Rotate());
+    }
+
+    private IEnumerator Rotate()
+    {
+        WaitForSeconds Wait = new WaitForSeconds(1f /  ticksPerSecond);
+
+        while (true)
+        {
+            if(!Pause) 
+            {
+                transform.Rotate(Vector3.up * rotationAmount);
+            }
+            yield return Wait;
+        }
     }
 }
