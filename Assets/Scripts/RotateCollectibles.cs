@@ -4,8 +4,35 @@ using UnityEngine;
 
 public class RotateCollectibles : MonoBehaviour
 {
-    void Update()
+
+    public float rotationAmount = 2f;
+    public int ticksPerSecond = 60;
+    public bool Pause = false;
+
+    private void Start()
     {
-        transform.Rotate(Vector3.up * Time.deltaTime);
+        StartCoroutine(Rotate());
+    }
+
+    public IEnumerator Rotate()
+    {
+        WaitForSeconds Wait = new WaitForSeconds(1f /  ticksPerSecond);
+
+        while (true)
+        {
+            if(!Pause) 
+            {
+                transform.Rotate(Vector3.up * rotationAmount);
+            }
+            yield return Wait;
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Pause = true;
+        }
     }
 }
