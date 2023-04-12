@@ -75,6 +75,6 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _BottomColor: {r: 274.374, g: 119.215805, b: 27.60994, a: 1}
-    - _TopColor: {r: 1, g: 0.22812498, b: 0, a: 0}
+    - _BottomColor: {r: 48.92725, g: 18.220175, b: 0.3077125, a: 1}
+    - _TopColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
