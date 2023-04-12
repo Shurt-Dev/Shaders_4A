@@ -9,6 +9,10 @@ TagManager:
   - Invincibility
   - Phantom
   - Health
+  - Ibubble
+  - Hbubble
+  - ITrigger
+  - HTrigger
   layers:
   - Default
   - TransparentFX

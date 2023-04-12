@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: BubbleEnd
+  m_Name: Heal bublle
   m_Shader: {fileID: -6465566751694194690, guid: 532e05ffd02570b44bd602d56720d675,
     type: 3}
   m_Parent: {fileID: 0}
@@ -41,14 +41,14 @@ Material:
     - _Disolve: -0.54
     - _DisolveEdgeThickness: 0.24
     - _DistortionForce: 1
-    - _FresnelPower: 3.94
+    - _FresnelPower: 10
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
     - _Color: {r: 0, g: 0, b: 0, a: 0}
     - _DisolveEdgeColor: {r: 0.7058377, g: 1, b: 0, a: 0}
     - _Fresnel_Color: {r: 0.22971594, g: 1, b: 0, a: 0.007843138}
-    - _MarkSmoothstep: {r: 0.57, g: 1.58, b: 0, a: 0}
+    - _MarkSmoothstep: {r: 0.65, g: 1.58, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &1904248091992818192
 MonoBehaviour:
