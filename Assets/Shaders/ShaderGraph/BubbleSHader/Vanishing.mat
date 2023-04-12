@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HealthPotion
-  m_Shader: {fileID: -6465566751694194690, guid: 8b2642b84abaf0a42a634cec40037651,
+  m_Name: Vanishing
+  m_Shader: {fileID: -6465566751694194690, guid: 73805b98b32de4847b4e1e6c5683bebf,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -38,19 +38,13 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BottomLine: 1
-    - _Metallic: 1
+    - _Dissolve: -0.23
+    - _DisssolveEdgeThickness: 0.95
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1
-    - _TopLine: 1
-    - _Transparency: 1
-    m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _BottomColor: {r: 0.24638054, g: 3.3261392, b: 0, a: 0}
-    - _TopColor: {r: 0, g: 3.3261406, b: 1.1107855, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &8076620616743230048
+--- !u!114 &7301878977026330485
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
