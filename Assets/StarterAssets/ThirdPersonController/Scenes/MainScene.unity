@@ -7541,6 +7541,24 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2059153120}
     m_Modifications:
+    - target: {fileID: 256727036152475980, guid: 0bfcd5a4505662a4d839ee72f680d431,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: cce57be0ca7855b4d8dfb23fece417d3,
+        type: 3}
+    - target: {fileID: 256727036152475980, guid: 0bfcd5a4505662a4d839ee72f680d431,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: cce57be0ca7855b4d8dfb23fece417d3,
+        type: 3}
+    - target: {fileID: 256727036152475980, guid: 0bfcd5a4505662a4d839ee72f680d431,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: -876546973899608171, guid: cce57be0ca7855b4d8dfb23fece417d3,
+        type: 3}
     - target: {fileID: 4331163021788856784, guid: 0bfcd5a4505662a4d839ee72f680d431,
         type: 3}
       propertyPath: m_Name
@@ -7554,17 +7572,17 @@ PrefabInstance:
     - target: {fileID: 8932905976621255202, guid: 0bfcd5a4505662a4d839ee72f680d431,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.57260025
+      value: -0.57
       objectReference: {fileID: 0}
     - target: {fileID: 8932905976621255202, guid: 0bfcd5a4505662a4d839ee72f680d431,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.7076836
+      value: 4.12
       objectReference: {fileID: 0}
     - target: {fileID: 8932905976621255202, guid: 0bfcd5a4505662a4d839ee72f680d431,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.4708548
+      value: 2.31
       objectReference: {fileID: 0}
     - target: {fileID: 8932905976621255202, guid: 0bfcd5a4505662a4d839ee72f680d431,
         type: 3}
@@ -14957,6 +14975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6392546783009048267}
   - component: {fileID: 5597113866872432311}
+  - component: {fileID: 8187455077504354064}
   m_Layer: 0
   m_Name: Armature_Mesh
   m_TagString: Untagged
@@ -14964,6 +14983,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8187455077504354064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8187455077504354063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b356dcfe3c016db448fd662995590397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8322255485271233297
 Transform:
   m_ObjectHideFlags: 0
