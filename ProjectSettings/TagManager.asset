@@ -9,10 +9,13 @@ TagManager:
   - Invincibility
   - Phantom
   - Health
+  - Building
   - Ibubble
   - Hbubble
   - ITrigger
   - HTrigger
+  - Enemy
+  - Projectile
   layers:
   - Default
   - TransparentFX
