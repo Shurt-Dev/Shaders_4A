@@ -12,6 +12,5 @@ public class OpenBarrier : MonoBehaviour
             barrier.SetActive(false);
             gameObject.SetActive(false);
         }
-       
     }
 }
