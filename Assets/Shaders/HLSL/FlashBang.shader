@@ -1,21 +1,27 @@
-Shader "Learning/Unlit/RED"
+Shader "Learning/Unlit/FlashBang"
 {
     Properties
-    {   
-        // NOM_VARIABLE("NOM_AFFICHE_DANS_L'INSPECTOR", Shaderlab type) = defaultValue
-    }
-    
-    SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        // NOM_VARIABLE("NOM_AFFICHE_DANS_L'INSPECTOR", Shaderlab type) = defaultValue
+        _Timer("Timer", Float) = 10
+    }
 
-		Pass
+        SubShader
+    {
+        Tags { "RenderType" = "Transparent" "Queue" = "Transparent" }
+
+        Blend SrcAlpha OneMinusSrcAlpha
+        ZWrite Off
+
+        Pass
         {
-			HLSLPROGRAM
+            HLSLPROGRAM
             #pragma vertex vert  
             #pragma fragment frag
 
             #include "UnityCG.cginc"
+
+            float _Timer;
 			
 			struct vertexInput
             {
@@ -36,7 +42,8 @@ Shader "Learning/Unlit/RED"
 
             float4 frag(v2f i) : SV_Target
             {
-                return float4(1,0,0,0); 
+                _Timer = _Timer - _Time.x;
+                return float4(1,1,1, clamp(_Timer,0,1));
             }
             
             ENDHLSL

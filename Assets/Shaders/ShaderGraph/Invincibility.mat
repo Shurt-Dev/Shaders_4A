@@ -55,7 +55,7 @@ Material:
     - _AlphaToMask: 0
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
-    - _BottomLine: 0.604
+    - _BottomLine: 0.551
     - _CastShadows: 1
     - _Cull: 2
     - _DstBlend: 0
@@ -75,6 +75,6 @@ Material:
     - _ZWriteControl: 0
     m_Colors:
     - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _BottomColor: {r: 55.715233, g: 24.20833, b: 5.6065598, a: 1}
-    - _TopColor: {r: 1, g: 0.22812498, b: 0, a: 0}
+    - _BottomColor: {r: 48.92725, g: 18.220175, b: 0.3077125, a: 1}
+    - _TopColor: {r: 1, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
