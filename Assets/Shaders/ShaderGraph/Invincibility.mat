@@ -76,5 +76,5 @@ Material:
     m_Colors:
     - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
     - _BottomColor: {r: 48.92725, g: 18.220175, b: 0.3077125, a: 1}
-    - _TopColor: {r: 1, g: 0, b: 0, a: 0}
+    - _TopColor: {r: 3.2490096, g: 1.6474054, b: 0, a: 0}
   m_BuildTextureStacks: []
