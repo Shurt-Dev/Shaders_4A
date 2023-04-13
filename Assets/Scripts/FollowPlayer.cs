@@ -27,6 +27,7 @@ public class FollowPlayer : MonoBehaviour
             Detect= true;
         }
     }
+
     void Update()
     {
         OnDetect();
