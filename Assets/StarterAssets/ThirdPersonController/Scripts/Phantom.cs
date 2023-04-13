@@ -12,7 +12,7 @@ public class Gohst : MonoBehaviour
             GohstPower = true;
         }
 
-        if (GohstPower = true)
+        if (GohstPower == true)
         {
             gameObject.GetComponent<MeshCollider>().enabled = false;
         }
