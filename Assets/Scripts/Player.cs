@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -7,10 +9,17 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject _shield;
     [SerializeField] GameObject _projectileToSpawn;
     [SerializeField] Transform _projectileSpawnLocation;
+    [SerializeField] GameObject[] Enemys;
 
-    private int _life = 100;
     private int _maxLife = 100;
+    private int _life;
+    private bool enemyAttack = false;
+    private float cooldown = 0;
 
+    private void Start()
+    {
+        _life = _maxLife;
+    }
     void Update()
     {
         Shader.SetGlobalVector("_WorldSpacePlayerPos", transform.position);
@@ -25,12 +34,28 @@ public class Player : MonoBehaviour
         // Shield
         if (Input.GetKeyDown(KeyCode.E))
             _shield.SetActive(!_shield.activeSelf);
+        print(_life);
+        print(cooldown);
+        cooldown = Mathf.Max(0, cooldown - Time.deltaTime);
+        if (enemyAttack)
+        {
+            UpdateLife();
+        }
     }
 
-    public void UpdateLife(int valueToAdd)
+    private void OnTriggerEnter(Collider collision)
     {
-        // clamp the life between 0 and MaxLife;
-        // if life == 0
-        //    Visual effect + disable the movements of the player, etc etc...
+        if (collision.gameObject.tag == "Enemy" && cooldown == 0)
+        {
+            enemyAttack = true;
+            cooldown = 1;
+        }
     }
+
+    public void UpdateLife()
+    {
+        _life = Mathf.Max(0, _life-10);
+        enemyAttack = false;
+    }
+
 }
