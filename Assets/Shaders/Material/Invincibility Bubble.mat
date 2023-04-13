@@ -7,14 +7,14 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HealthPotion
-  m_Shader: {fileID: -6465566751694194690, guid: 8b2642b84abaf0a42a634cec40037651,
+  m_Name: Invincibility Bubble
+  m_Shader: {fileID: -6465566751694194690, guid: 532e05ffd02570b44bd602d56720d675,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords: []
-  m_LightmapFlags: 2
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -38,19 +38,20 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _BottomLine: 0.516
-    - _Metallic: 1
+    - _Alph: 1
+    - _Disolve: -0.15
+    - _DisolveEdgeThickness: 0.24
+    - _DistortionForce: 1
+    - _FresnelPower: 9.5
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smoothness: 1
-    - _TopLine: 1
-    - _Transparency: 1
     m_Colors:
-    - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
-    - _BottomColor: {r: 76.49173, g: 966.69995, b: 6.0797544, a: 0}
-    - _TopColor: {r: 0.9039184, g: 1.8660659, b: 0, a: 0}
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _DisolveEdgeColor: {r: 0.8008689, g: 1, b: 0, a: 0}
+    - _Fresnel_Color: {r: 0.9136506, g: 1, b: 0.006289184, a: 0}
+    - _MarkSmoothstep: {r: 0.65, g: 1.58, b: 0, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &8076620616743230048
+--- !u!114 &5199192475478318051
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}

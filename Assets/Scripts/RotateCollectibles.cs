@@ -8,12 +8,13 @@ public class RotateCollectibles : MonoBehaviour
     public float rotationAmount = 2f;
     public int ticksPerSecond = 60;
     public bool Pause = false;
+
     private void Start()
     {
         StartCoroutine(Rotate());
     }
 
-    private IEnumerator Rotate()
+    public IEnumerator Rotate()
     {
         WaitForSeconds Wait = new WaitForSeconds(1f /  ticksPerSecond);
 
@@ -24,6 +25,14 @@ public class RotateCollectibles : MonoBehaviour
                 transform.Rotate(Vector3.up * rotationAmount);
             }
             yield return Wait;
+        }
+    }
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Pause = true;
         }
     }
 }
