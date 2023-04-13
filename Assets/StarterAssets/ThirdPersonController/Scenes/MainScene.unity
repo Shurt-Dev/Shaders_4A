@@ -1942,6 +1942,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buildings_4
       objectReference: {fileID: 0}
+    - target: {fileID: 4331163021788856784, guid: 0bfcd5a4505662a4d839ee72f680d431,
+        type: 3}
+      propertyPath: m_TagString
+      value: Building
+      objectReference: {fileID: 0}
     - target: {fileID: 8932905976621255202, guid: 0bfcd5a4505662a4d839ee72f680d431,
         type: 3}
       propertyPath: m_RootOrder
@@ -6308,6 +6313,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Phantom
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b1a101c972b472440ac1642be0d5876f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Phantom
+      objectReference: {fileID: 0}
     - target: {fileID: 4424396828587804706, guid: b1a101c972b472440ac1642be0d5876f,
         type: 3}
       propertyPath: m_TagString
@@ -8934,6 +8944,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bcb10245bb4ddb7418832f3d0ed06c3b, type: 3}
+--- !u!1 &1550281803 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4331163021788856784, guid: 0bfcd5a4505662a4d839ee72f680d431,
+    type: 3}
+  m_PrefabInstance: {fileID: 368099122}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1561473401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14180,6 +14196,7 @@ GameObject:
   - component: {fileID: 135756641613574975}
   - component: {fileID: 4416926083347132239}
   - component: {fileID: 6982812147933622148}
+  - component: {fileID: 6982812147933622149}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -15073,6 +15090,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InvincibilityBubble: {fileID: 839954314}
   HealingBubble: {fileID: 379715582}
+--- !u!114 &6982812147933622149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926083347132227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e4f82a6493ba84d9510f99c7a2a9fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Building: {fileID: 1550281803}
+  PlayerArmature: {fileID: 8187455077504354063}
+  _MeshMaterial: {fileID: -876546973899608171, guid: 674966dbdfc268a48ae5572a0a1a6fb7,
+    type: 3}
+  _MeshMaterialBulding: {fileID: -876546973899608171, guid: cce57be0ca7855b4d8dfb23fece417d3,
+    type: 3}
 --- !u!4 &6983258930626336602
 Transform:
   m_ObjectHideFlags: 0
