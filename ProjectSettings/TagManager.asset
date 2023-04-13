@@ -9,6 +9,7 @@ TagManager:
   - Invincibility
   - Phantom
   - Health
+  - Building
   layers:
   - Default
   - TransparentFX
